@@ -2,7 +2,8 @@ import { Geist, Geist_Mono, Inter } from "next/font/google"
 
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
-import { cn } from "@/lib/utils";
+import { cn } from "@/src/lib/utils";
+import { Toaster } from "@/components/ui/sonner"
 
 const inter = Inter({subsets:['latin'],variable:'--font-sans'})
 
@@ -20,10 +21,16 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={cn("antialiased", fontMono.variable, "font-sans", inter.variable)}
+      className={cn("scroll-smooth antialiased", fontMono.variable, "font-sans", inter.variable)}
     >
       <body>
-        <ThemeProvider>{children}</ThemeProvider>
+        <ThemeProvider>
+          {children}
+          <Toaster             
+            position="top-center"
+            richColors
+          />
+        </ThemeProvider>
       </body>
     </html>
   )

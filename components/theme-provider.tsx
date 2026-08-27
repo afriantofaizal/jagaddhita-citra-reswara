@@ -10,7 +10,7 @@ function ThemeProvider({
   return (
     <NextThemesProvider
       attribute="class"
-      defaultTheme="system"
+      defaultTheme="dark"
       enableSystem
       disableTransitionOnChange
       {...props}
@@ -47,10 +47,17 @@ function ThemeHotkey() {
         return
       }
 
-      if (event.key.toLowerCase() !== "d") {
+      // Pastikan key tersedia
+      if (!event.key) {
         return
       }
 
+      // Shortcut: D / d
+      if (event.key !== "d" && event.key !== "D") {
+        return
+      }
+
+      // Jangan jalankan shortcut ketika sedang mengetik
       if (isTypingTarget(event.target)) {
         return
       }
