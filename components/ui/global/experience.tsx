@@ -244,11 +244,11 @@ const Experience = (props: Props) => {
 
                     {/* Icon */}
 
-                    <div className="relative z-10 rounded-full bg-primary-foreground p-4">
+                    <div className="relative z-10 rounded-full bg-primary-foreground p-2 lg:p-4">
 
                       <HugeiconsIcon
                         icon={Appointment02Icon}
-                        className="text-amber-400"
+                        className="text-amber-400 h-5 lg:h-6 w-auto"
                       />
 
                     </div>
@@ -267,11 +267,11 @@ const Experience = (props: Props) => {
 
                     <div>
 
-                      <h3 className="text-lg font-medium">
+                      <h3 className="text-sm lg:text-lg font-medium">
                         {project.year}
                       </h3>
 
-                      <p className="text-sm text-muted-foreground">
+                      <p className="text-xs lg:text-sm text-muted-foreground">
                         {project.date}
                       </p>
 
@@ -282,8 +282,8 @@ const Experience = (props: Props) => {
 
                     <div
                       className="
-                        space-y-6 rounded-xl border
-                        bg-primary-foreground p-8
+                        space-y-4 lg:space-y-6 rounded-xl border
+                        bg-primary-foreground p-4 lg:p-8
                         transition-all duration-300
                         hover:border-amber-400/20
                         hover:shadow-xl
@@ -308,9 +308,9 @@ const Experience = (props: Props) => {
 
                       {/* Project Metadata */}
 
-                      <div className="flex items-center justify-between gap-4 border-t border-border pt-6">
+                      <div className="flex flex-col border-t border-border pt-6 lg:flex-row lg:items-center lg:justify-between">
 
-                        <span className="text-xs text-muted-foreground">
+                        <span className="text-xs text-muted-foreground break-all">
                           {project.reference}
                         </span>
 
