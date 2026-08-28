@@ -225,7 +225,7 @@ const Cta = (props: Props) => {
                           {contact.label}
                         </p>
 
-                        <p className="text-base leading-relaxed text-pretty">
+                        <p className="text-sm leading-relaxed text-pretty">
                           {contact.value}
                         </p>
 
