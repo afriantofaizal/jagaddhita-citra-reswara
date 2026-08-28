@@ -174,7 +174,7 @@ const Cta = (props: Props) => {
 
                     <Button
                       asChild
-                      className="mt-12 bg-amber-400 text-black hover:bg-amber-300"
+                      className="h-12 px-8 mt-12 bg-amber-400 text-black hover:bg-amber-300"
                     >
 
                       <Link href={button.url}>
