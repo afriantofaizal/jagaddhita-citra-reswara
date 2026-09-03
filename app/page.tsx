@@ -5,7 +5,6 @@ import { Experience } from "@/components/ui/global/experience"
 import { Footer } from "@/components/ui/global/footer"
 import { Hero } from "@/components/ui/global/hero"
 import { Navbar } from "@/components/ui/global/navbar"
-import { Officer } from "@/components/ui/global/officer"
 import { Services } from "@/components/ui/global/services"
 
 export default function Page() {
@@ -16,7 +15,6 @@ export default function Page() {
       <AboutSection />
       <Services />
       <Experience />
-      <Officer />
       <Cta />
       <Footer />
     </div>
